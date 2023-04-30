@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="heading">Gider Hesaplama</h1>
+    <div class="Container">
+        <h3 class="greet">
+            Hosgeldin, <input type="text" placeholder="İsmizi Giriniz" />
+        </h3>
+        <form>
+            <div class="double">
+                <div class="form-gider">
+                    <label>Gider</label>
+                    <input id="gider" type="text" placeholder="ürünü giriniz...">
+                </div>
+                <div class="form-fiyat">
+                    <label>Fiyat</label>
+                    <input id="fiyat" type="number" placeholder="fiyatini giriniz..">
+                </div>
+            </div>
+            <div class="double">
+                <div class="form-durum">
+                    <input id="status-input" type="checkbox">
+                    <label for="status-input">Odendi</label>
+                </div>
+                <button class="ekle-btn">Ekle</button>
+            </div>
+        </form>
+        <!--toplam ifadesi-->
+        <div class="toplam">
+            Toplam Gider: <span id="toplam-bilgi">0</span>&#36;
+        </div>
+
+        <select id="filter-select">
+            <option value="payed">Ödendi</option>
+            <option value="not-payed">Ödenmedi</option>
+            <option value="all">Hepsi</option>
+        </select>
+        <!--Liste-->
+        <div class="liste"></div>
+    </div>
+
+    <!-- Js Baglama-->
+    <script src="main.js"></script>
+</body>
+
+</html>
